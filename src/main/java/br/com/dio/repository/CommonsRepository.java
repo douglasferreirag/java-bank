@@ -1,9 +1,18 @@
 package br.com.dio.repository;
 
-import br.com.dio.exception.NoFundsEnoughException;
+import br.com.dio.expcetion.NoFundsEnoughException;
+import br.com.dio.model.AccountWallet;
+import br.com.dio.model.Money;
+import br.com.dio.model.MoneyAudit;
 import br.com.dio.model.Wallet;
 import lombok.NoArgsConstructor;
 
+import java.time.OffsetDateTime;
+import java.util.List;
+import java.util.UUID;
+import java.util.stream.Stream;
+
+import static br.com.dio.model.BankService.ACCOUNT;
 import static lombok.AccessLevel.PRIVATE;
 
 @NoArgsConstructor(access = PRIVATE)
@@ -19,6 +28,5 @@ public final class CommonsRepository {
         var history = new MoneyAudit(transactionId, ACCOUNT, description, OffsetDateTime.now());
         return Stream.generate(() -> new Money(history)).limit(funds).toList();
     }
-
 
 }

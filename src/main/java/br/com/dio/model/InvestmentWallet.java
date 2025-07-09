@@ -1,16 +1,16 @@
 package br.com.dio.model;
 
-import lombok.ToString;
-
 import lombok.Getter;
 
 import java.time.OffsetDateTime;
 import java.util.UUID;
 import java.util.stream.Stream;
 
-@ToString
+import static br.com.dio.model.BankService.INVESTMENT;
+
 @Getter
 public class InvestmentWallet extends Wallet{
+
     private final Investment investment;
     private final AccountWallet account;
 
@@ -18,7 +18,7 @@ public class InvestmentWallet extends Wallet{
         super(INVESTMENT);
         this.investment = investment;
         this.account = account;
-        addMoney(account.reduceMoney(amount), getService(), "investmento");
+        addMoney(account.reduceMoney(amount), getService(), "investimento");
     }
 
     public void updateAmount(final long percent){
