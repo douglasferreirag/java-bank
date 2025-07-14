@@ -22,6 +22,10 @@ public class Money {
         this.history.add(history);
     }
 
+    public List<MoneyAudit> getHistory(){
 
+        return this.history;
+
+    }
 
 }

@@ -35,4 +35,10 @@ public class InvestmentWallet extends Wallet{
                 ", account=" + account +
                 '}';
     }
+
+    public AccountWallet getAccount(){
+
+        return this.account;
+
+    }
 }

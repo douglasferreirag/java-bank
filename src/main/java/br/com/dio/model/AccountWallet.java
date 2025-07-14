@@ -33,4 +33,10 @@ public class AccountWallet extends Wallet{
                 "pix=" + pix +
                 '}';
     }
+
+    public List<String> getPix(){
+
+        return this.pix;
+
+    }
 }

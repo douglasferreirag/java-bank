@@ -155,6 +155,7 @@ public class Main {
         }
     }
 
+
     private static void checkHistory(){
         System.out.println("Informe a chave pix da conta para verificar extrato:");
         var pix = scanner.next();

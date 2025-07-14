@@ -1,6 +1,6 @@
 package br.com.dio.repository;
 
-import br.com.dio.expcetion.NoFundsEnoughException;
+import br.com.dio.exception.NoFundsEnoughException;
 import br.com.dio.model.AccountWallet;
 import br.com.dio.model.Money;
 import br.com.dio.model.MoneyAudit;
