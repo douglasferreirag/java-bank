@@ -45,9 +45,7 @@ Além disso, ele serve como um bom exercício para reforçar conceitos como:
 
 
 ## Estrutura do projeto
-scss
-Copiar
-Editar
+
 📦 src
  ┣ 📂 app          → Ponto de entrada da aplicação e menus
  ┣ 📂 model        → Classes que representam as entidades (conta, cliente, investimento)
